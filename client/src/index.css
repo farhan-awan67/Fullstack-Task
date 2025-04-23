@@ -41,8 +41,8 @@ p {
 }
 
 .spinner {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border-top: 8px solid black;
   border: 8px solid white;
