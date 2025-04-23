@@ -34,6 +34,9 @@ form .inputWrapper {
 button {
   padding: 10px 14px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
