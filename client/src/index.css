@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: black;
+  color: white;
+  gap: 60px;
+}
+
+form {
+  flex-basis: 30%;
+}
+
+form .inputWrapper {
+  margin: 10px 0;
+}
+
+.inputWrapper label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inputWrapper input {
+  padding: 5px;
+}
+
+button {
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+p {
+  color: white;
+}
+
+.spinner {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border-top: 8px solid black;
+  border: 8px solid white;
+  animation: spin 0.3s ease linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* productList css */
+.products {
+  flex-basis: 50%;
+  padding: 10px;
+}
+
+.products h1 {
+  margin-bottom: 25px;
+}
+
+.cardLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+.cardLabel > p {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: normal;
+}
+
+.productWrapper {
+  overflow-y: scroll;
+}
+
+.productCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.productCard h2 {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
